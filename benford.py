@@ -32,5 +32,4 @@ def benford(digit):
 if len(sys.argv) != 2:
 	print 'You must provide the number of digits you want the number to be. If you want a five-digit number, try running `benford.py 5`.'
 else:
-	for i in range(0,10000):
-		print benfordWrapper(int(sys.argv[1]))
+	print benfordWrapper(int(sys.argv[1]))
