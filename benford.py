@@ -11,7 +11,7 @@ def benfordWrapper(digits):
 def benford(digit):
 	# Begin: Calcuate distrubtion
 	dist = [float(0)] * 10 # Initialize Benford distribution array
-	if digit == 1: # If this is the first digit, the distrubtion is calcuated slightly different
+	if digit == 1: # If this is the first digit, the distrubtion is calcuated slightly differently
 		for i in range(1,10): # For every integer in 1 to 9 (incluive)
 			dist[i] = log10(1 + 1/float(i)) # Calcuate it's Benford dist
 	else:
